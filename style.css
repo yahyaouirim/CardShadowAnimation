@@ -1,0 +1,67 @@
+.root {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 15px;
+    border-radius: 15px;
+    border:1px solid transparent;
+    background-color: #020202;
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+    border: 3px solid #00d7c3;
+    }
+.root:hover{
+    transform: scale(1.1);
+    opacity: .9;
+    box-shadow: 0 0 20px 5px #00d7c3 inset, 0 0 20px 5px #00d7c3;
+    
+    }
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    
+    color: #00d7c3;
+    }
+.card{
+    margin-left: 0px;
+    }
+h1{
+    border-bottom: 15px double #00d7c3;
+    text-transform: uppercase;
+    transition: all 5s ease;
+    text-align: center;
+    
+    }
+h2{
+    initial-letter: 2;
+    letter-spacing: 0.2em;
+    line-height: 1.5;
+    font-size: 1.25em;
+    animation: translate-x 3s linear infinite;
+    
+    }
+@keyframes translate-x {
+    from {
+        transform: translateX(0%);
+        }
+        to {
+        transform: translateX(30%);
+        }
+    }
+h1:hover{
+    font-size: 3.5 erm;
+    color: white;
+    }
+ul{
+    list-style: none;
+    }
+li{
+    text-align: left;
+    margin-bottom: 10px;
+    animation: move 4s linear infinite;
+    
+    }
+@keyframes move{
+    0%{ margin-left: -20px;}
+    
+    100%{margin-left: 150px;}
+    }
+    
